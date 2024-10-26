@@ -45,8 +45,8 @@ public class ProcessosActivity extends AppCompatActivity {
             assert tipoConta != null;
             if (tipoConta.equals("poupanca")) {
                 conta = new ContaPoupanca(nome, numConta, saldoInicial, 20);
-                btnCalcularRendimento.setVisibility(View.VISIBLE);
             } else if (tipoConta.equals("especial")) {
+                btnCalcularRendimento.setVisibility(View.GONE);
                 conta = new ContaEspecial(nome, numConta, saldoInicial, 750);
             }
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ContaBancaria</string>
+    <string name="dados_da_conta">Dados da Conta:</string>
 </resources>

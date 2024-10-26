@@ -19,4 +19,9 @@ public class ContaEspecial extends ContaBancaria {
         }
     }
 
+    @Override
+    public String getDadosConta() {
+        return "Cliente: " + nome + ", Conta: " + numConta + ", Saldo: R$ " + saldo + ", Limite: R$ " + limite;
+    }
+
 }

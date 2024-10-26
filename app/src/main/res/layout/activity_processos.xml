@@ -3,16 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ProcessosActivity">
 
     <TextView
         android:id="@+id/lblDadosConta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="117dp"
-        android:layout_marginEnd="39dp"
-        android:text="Dados da Conta:"
+        android:layout_marginEnd="38dp"
+        android:text="@string/dados_da_conta"
         app:layout_constraintBottom_toTopOf="@+id/etValorOperacao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +23,8 @@
         android:id="@+id/etValorOperacao"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginEnd="39dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
         android:layout_marginBottom="36dp"
         android:hint="Valor da Operação"
         app:layout_constraintBottom_toTopOf="@+id/btnDepositar"
@@ -47,21 +48,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
-        android:layout_marginBottom="369dp"
+        android:layout_marginBottom="30dp"
         android:text="Sacar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularRendimento"
         app:layout_constraintStart_toStartOf="@+id/btnDepositar"
         app:layout_constraintTop_toBottomOf="@+id/btnDepositar" />
 
     <Button
         android:id="@+id/btnCalcularRendimento"
-        android:layout_width="46dp"
-        android:layout_height="33dp"
+        android:layout_width="132dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="281dp"
         android:text="Calcular Rendimento"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSacar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
